@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Heaven kitchen restaurant</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar fixed-top navbar-expand-lg"
+        style="background-color: rgb(235, 204, 131)"
+      >
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="#"
+            style="
+              font-family: Cinzel, sans-serif;
+              text-transform: uppercase;
+              color: rgb(255, 255, 255);
+            "
+            >Heaven Kitchen
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Heaven Kitchen
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="offcanvas-body"
+              style="background-color: rgb(235, 204, 131)"
+            >
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#heros"
+                    >Accueil</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#Menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#T-about"
+                    >A propos de nous</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="position-relative">
+        <div>
+          <img src="Bg-nav2 copie.jpg" alt="" id="heros" class="img-fluid" />
+        </div>
+
+        <div
+          class="position-absolute top-50 start-50 translate-middle d-flex flex-column align-items-center p-2"
+          style="
+            background-color: rgba(25, 22, 16, 0.2);
+            backdrop-filter: blur(10px);
+          "
+        >
+          <div class="d-flex flex-column align-items-center">
+            <h2
+              class="ml-50 text-center"
+              style="color: rgb(235, 204, 131)"
+              id="name"
+            >
+              Heaven Kitchen Restaurant
+            </h2>
+            <p id="titre" style="color: white">
+              Délices et Saveurs : Une Évasion Culinaire
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary w-50"
+              id="btn-commande"
+            >
+              Commandez
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="Menu" class="bg-success-subtle p-3">
+        <div class="container text-center">
+          <h1
+            class="text-uppercase"
+            id="T-menu"
+            style="text-decoration: underline"
+          >
+            Menu
+          </h1>
+          <div
+            class="row d-flex flex-row justify-content-center gap-2 p-2 flex-lg-nowrap"
+          >
+            <div class="col-3 card" style="width: 18rem" id="card">
+              <img
+                src="imagerestaurant/Deces/Mousse-au-chocolat.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">Mousse au chocolat</h5>
+                  <p class="card-text">
+                    Une délicieuse mousse aérienne, riche en chocolat noir, qui
+                    fond en bouche.
+                  </p>
+                </div>
+                <div>
+                  <h5>Prix: 6,00 €</h5>
+                  <a href="#" class="btn btn-primary">Commandez</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 card" style="width: 18rem" id="card">
+              <img
+                src="imagerestaurant/Deces/Crème-brûlée.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">Crème brûlée</h5>
+                  <p class="card-text">
+                    SUn dessert classique et élégant, composé d'une crème
+                    onctueuse à la vanille, recouverte d'une fine couche de
+                    caramel croquant.
+                  </p>
+                </div>
+                <div>
+                  <h5 class="">Prix: 6,00 €</h5>
+                  <a href="#" class="btn btn-primary">Commandez</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3 card" style="width: 18rem" id="card">
+              <img
+                src="imagerestaurant/Entree/tartare-de-saumon.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tartare de saumon</h5>
+                <p class="card-text">
+                  Un plat frais et léger, composé de saumon cru finement coupé
+                  en dés, assaisonné avec du citron, de l'huile d'olive et des
+                  herbes aromatiques.
+                </p>
+                <h5>Prix: 12,00 €</h5>
+                <a href="#" class="btn btn-primary">Commandez</a>
+              </div>
+            </div>
+            <div class="col-3 card" style="width: 18rem" id="card">
+              <img
+                src="imagerestaurant/Plats Principaux/Coq-au-vin.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Coq au vin</h5>
+                <p class="card-text">
+                  Un plat traditionnel français, où le poulet est mijoté
+                  lentement dans du vin rouge avec des champignons, des oignons
+                  et des lardons.
+                </p>
+                <h5>Prix: 16,00 €</h5>
+                <a href="#" class="btn btn-primary">Commandez</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div
+            class="row d-flex flex-row gap-2 p-2 justify-content-center flex-lg-nowrap"
+          >
+            <div class="col-3 card" style="width: 18rem" id="card">
+              <img
+                src="imagerestaurant/Plats Principaux/Couscous-royal.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Couscous royal</h5>
+                <p class="card-text">
+                  Un plat traditionnel nord-africain composé de semoule légère,
+                  servi avec un mélange de viandes (poulet, agneau, merguez) et
+                  de légumes variés.
+                </p>
+                <h5>Prix: 18,00 €</h5>
+                <a href="#" class="btn btn-primary">Commandez</a>
+              </div>
+            </div>
+
+            <div class="col-3 card" style="width: 18rem" id="card">
+              <img
+                src="imagerestaurant/Plats Principaux/Lasagnes-à-la-bolognaise.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lasagnes à la bolognaise</h5>
+                <p class="card-text">
+                  Des couches de pâtes fraîches alternant entre une riche sauce
+                  bolognaise à base de viande hachée, tomates et herbes, et une
+                  sauce béchamel crémeuse.
+                </p>
+                <h5>Prix: 14,00 €</h5>
+                <a href="#" class="btn btn-primary">Commandez</a>
+              </div>
+            </div>
+            <div class="col-3 card" style="width: 18rem" id="card">
+              <img
+                src="imagerestaurant/Entree/Beignets-de-courgette.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">Beignets de courgette</h5>
+                  <p class="card-text">
+                    Des petites galettes croustillantes à base de courgettes
+                    râpées, mélangées à une pâte légère et dorées à la friture.
+                  </p>
+                </div>
+                <div>
+                  <h5>Prix: 7,00 €</h5>
+                  <a href="#" class="btn btn-primary">Commandez</a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-3 card"
+              style="width: 18rem; height: auto"
+              id="card"
+            >
+              <img
+                src="imagerestaurant/Entree/Cromesquis-de-fromage.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">Cromesquis de fromage</h5>
+                  <p class="card-text">
+                    De petites bouchées dorées et croustillantes, farcies de
+                    fromage fondant.
+                  </p>
+                </div>
+                <div>
+                  <h5>Prix: 8,00 €</h5>
+                  <a href="#" class="btn btn-primary">Commandez</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-success-subtle p-3" id="T-about">
+        <div class="container text-center" id="about-us">
+          <div class="row d-flex justify-content-between">
+            <div class="col-12 col-md-6 mb-md-3 mt-md-3 mb-sm-3" id="about">
+              <img src="pizza-burger-carre.jpg" alt="" class="img-fluid" />
+            </div>
+            <div
+              class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-content-center"
+              id=""
+            >
+              <h2 class="mb-3 text-decoration-underline">A propos de nous</h2>
+              <p class="" id="description">
+                A HEAVEN KITCHEN, nous vous accueillons dans une ambiance
+                chaleureuse pour déguster des plats savoureux préparés avec des
+                ingrédients frais et locaux. Notre chef talentueux crée des
+                expériences culinaires mémorables, que ce soit pour un déjeuner
+                ou un dîner. Rejoignez-nous et savourez chaque instant !
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="bg-success-subtle p-3">
+        <div class="container p-4">
+          <h2 class="text-center text-decoration-underline">Contactez-nous</h2>
+          <form class="row g-3">
+            <div class="col-md-12">
+              <label for="inputEmail4" class="form-label">Nom</label>
+              <input type="email" class="form-control" id="inputEmail4" />
+            </div>
+
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="ex: heavenkitchen@gmail.com"
+              />
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Message</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress2"
+                placeholder=""
+              />
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section
+        id="footer"
+        style="background-color: rgb(49, 44, 38); color: white"
+        class="p-3"
+      >
+        <div
+          class="container text-center d-flex justify-content-center gap-4 align-items-center"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <p>&copy; 2023 Pizza & Burger. Tous droits réservés.</p>
+              </div>
+              <div class="col-12 col-md-6">
+                <ul class="list-inline d-flex gap-3 justify-content-center">
+                  <li><i class="fa-brands fa-facebook"></i></li>
+                  <li><i class="fa-brands fa-whatsapp"></i></li>
+                  <li><i class="fa-brands fa-twitter"></i></li>
+                  <li><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
